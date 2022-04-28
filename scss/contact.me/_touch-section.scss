@@ -1,0 +1,31 @@
+.touch-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  border-top: 2px solid $color-touch;
+  border-bottom: 2px solid $color-touch;
+}
+
+.touch-section__heading {
+  font-family: $Ibarra-Real-Nova;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+}
+.touch-section__texts-desc {
+  font-family: $font-Public;
+  font-size: 16px;
+  line-height: 30px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  max-width: 635px;
+  width: 100%;
+}
+.touch-section__texts-button {
+  margin-top: 24px;
+  margin-left: -15px;
+}
+.touch-section__texts-img {
+  margin-left: 15px;
+}

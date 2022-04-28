@@ -1,0 +1,20 @@
+/*CONTAINER*/
+.container {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@include breakpoint-down(768px) {
+  .container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+}
+@include breakpoint-down(375px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}

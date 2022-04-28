@@ -1,0 +1,131 @@
+.about-us {
+  display: flex;
+}
+
+.about-us__section {
+  max-width: 350px;
+  width: 100%;
+  margin-left: 125px;
+  padding-top: 50px;
+  padding-bottom: 46px;
+  border-top: 2px solid $color-touch;
+  border-bottom: 2px solid $color-touch;
+}
+.about-us__picture {
+  flex-shrink: 0;
+}
+.about-us__section-heading {
+  font-family: $Ibarra-Real-Nova;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357143px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+.about-us__section-desc {
+  font-size: 16px;
+  line-height: 30px;
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 41px;
+}
+.about-us__section-link {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-primary;
+  padding: 17px 36px 17px 32px;
+  border: 1px solid #33323d;
+}
+@include breakpoint-down(1020px) {
+  .about-us__section {
+    margin-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .about-us__section-link {
+    font-size: 8px;
+    line-height: 10px;
+    padding: 12px 22px 12px 22px;
+  }
+  .about-us__picture {
+    max-width: 400px;
+    width: 100%;
+  }
+}
+@include breakpoint-down(850px) {
+  .about-us__section {
+    margin-left: 20px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+
+@include breakpoint-down(786px) {
+  .about-us__section {
+    margin-left: auto;
+    margin-left: -69px;
+  }
+  .about-us__section-desc {
+    margin-bottom: 28px;
+  }
+  .about-us__section {
+    max-width: 339px;
+    width: 100%;
+  }
+  @include breakpoint-down(645px) {
+    .about-us {
+      flex-direction: column;
+    }
+    .about-us__section {
+      margin-left: auto;
+    }
+    .about-us__section-desc {
+      font-size: 10px;
+      line-height: 15px;
+      margin-bottom: 28px;
+    }
+    .about-us__section {
+      max-width: 640px;
+      width: 100%;
+    }
+    .about-us__section-link {
+      font-size: 8px;
+      line-height: 9px;
+      padding: 9px 20px 9px 20px;
+    }
+    .about-us__picture {
+      margin-bottom: 30px;
+    }
+  }
+  @include breakpoint-down(375px) {
+    .about-us__picture {
+      margin-bottom: 32px;
+    }
+    .about-us {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .about-us__section {
+      max-width: 311px;
+      margin-right: 0;
+      margin-left: 0;
+
+      padding-bottom: 51px;
+    }
+    .about-us__section-heading {
+      margin-left: auto;
+    }
+    .about-us__section {
+      margin: 0;
+    }
+    .about-us__section-desc {
+      margin-bottom: 28px;
+    }
+  }
+}

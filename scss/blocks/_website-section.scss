@@ -1,0 +1,91 @@
+.website-section {
+  background-image: url(/img/background-img-1x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 243px;
+  padding-right: 665px;
+  margin-bottom: 150px;
+}
+.website-section__texts {
+  background-color: $color-white;
+  max-width: 445px;
+  width: 100%;
+}
+.website-section__heading {
+  max-width: 390px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  padding-top: 56px;
+  padding-right: 53px;
+  margin-bottom: 53px;
+  font-family: $Ibarra-Real-Nova;
+  font-size: 50px;
+  line-height: 50px;
+}
+.website-section__desc {
+  display: flex;
+}
+.website-section__img-text {
+  padding: 16px 22px 16px 22px;
+  background-color: $color-gray;
+}
+.website-section__link {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background-color: $color-gray;
+  opacity: 0.9;
+  color: $white;
+  text-decoration: none;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  max-width: 152px;
+  width: 100%;
+}
+
+@include breakpoint-down(786px) {
+  .website-section {
+    background-image: url(/img/backgroud-img-tablet1x.jpg);
+
+    padding-top: 322px;
+    padding-right: 174px;
+    margin-bottom: 96px;
+  }
+  .website-section__texts {
+    max-width: 514px;
+    width: 100%;
+  }
+  .website-section__heading {
+    max-width: 458px;
+    width: 100%;
+    padding-top: 56px;
+    padding-right: 56px;
+    margin-bottom: 48px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
+@include breakpoint-down(375px) {
+  .website-section {
+    background-image: url(/img/background-img-mobile1x.jpg);
+    padding: 0;
+    padding-top: 271px;
+  }
+  .website-section__texts {
+    max-width: 514px;
+    width: 100%;
+  }
+  .website-section__heading {
+    max-width: 458px;
+    width: 100%;
+    padding-top: 56px;
+    padding-right: 56px;
+    margin-bottom: 48px;
+    font-size: 40px;
+    line-height: 42px;
+  }
+}
